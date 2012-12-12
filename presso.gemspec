@@ -17,11 +17,20 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  dependency_entries = [
-    ['nanoc']
-  ]
+  dependency_entries = {
+    :base => [
+      ['nanoc']
+    ],
+    :development => [
+      ['rspec']
+    ]
+  }
 
-  dependency_entries.each do |de|
+  dependency_entries[:base].each do |de|
     spec.add_dependency *de
+  end
+
+  dependency_entries[:development].each do |de|
+    spec.add_development_dependency *de
   end
 end
