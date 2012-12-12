@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Presso::VERSION
   spec.authors       = ["John Feminella"]
   spec.email         = ["jxf@jxf.me"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Provides a number of reasonable wrappers for Nanoc."
+  spec.summary       = "Sensible helpers for Nanoc."
   spec.homepage      = ""
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   dependency_entries = [
+    ['nanoc']
   ]
 
   dependency_entries.each do |de|
