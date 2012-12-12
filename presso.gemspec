@@ -19,7 +19,8 @@ Gem::Specification.new do |spec|
 
   dependency_entries = {
     :base => [
-      ['nanoc']
+      ['nanoc'],
+      ['haml']
     ],
     :development => [
       ['rspec']
